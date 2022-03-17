@@ -51,7 +51,7 @@ const btnNext = document.querySelector('.next');
 const randomBtn = document.querySelector('.change')
  
 let firstPage = 0;
-window.addEventListener('load',function () {
+window.addEventListener('load', () => {
    olabode(firstPage)   
 })
 function olabode(person) {
@@ -61,7 +61,7 @@ function olabode(person) {
     job.innerHTML = times.job;
     content.innerHTML = times.content 
 }
-btnNext.addEventListener('click', function () {
+btnNext.addEventListener('click', () => {
     firstPage++;
     if (firstPage > review.length - 1) {
         firstPage = 0
@@ -69,7 +69,7 @@ btnNext.addEventListener('click', function () {
    olabode(firstPage)   
 
 });
-btnPrev.addEventListener('click', function () {
+btnPrev.addEventListener('click', () => {
     firstPage--;
     if (firstPage < 0) {
         firstPage = review.length - 1
