@@ -35,7 +35,7 @@ main img{
     filter: drop-shadow(2px 4px 6px black);
 
 }
-main h3.name{
+main h3.author{
     text-align: center;
 }
 main h2.job{
