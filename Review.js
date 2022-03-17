@@ -49,7 +49,34 @@ const content = document.querySelector('.content');
 const btnPrev = document.querySelector('.prev');
 const btnNext = document.querySelector('.next');
 const randomBtn = document.querySelector('.change')
+ 
+let firstPage = 0;
+window.addEventListener('load',function () {
+   olabode(firstPage)   
+})
+function olabode(person) {
+    let times = review[person];
+    img.src = times.img;
+    author.innerHTML = times.author;
+    job.innerHTML = times.job;
+    content.innerHTML = times.content 
+}
+btnNext.addEventListener('click', function () {
+    firstPage++;
+    if (firstPage > review.length - 1) {
+        firstPage = 0
+    }
+   olabode(firstPage)   
 
+});
+btnPrev.addEventListener('click', function () {
+    firstPage--;
+    if (firstPage < 0) {
+        firstPage = review.length - 1
+    }
+   olabode(firstPage)   
+
+});
 
 randomBtn.addEventListener('click',() => {
  let rev = Math.trunc( Math.random() * 4)  ;
@@ -60,5 +87,5 @@ console.log(rev)
  content.innerHTML = review[rev].content
 })
 
-btnPrev.addEventListener('click',)
+
 
