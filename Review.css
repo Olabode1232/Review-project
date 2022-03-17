@@ -1,3 +1,65 @@
 body{
-    background-color: aqua;
+    background-color: rgb(222, 253, 253);
+    font-family: sans-serif;
+}
+h1.project{
+    color: red;
+}
+h1.our{
+    text-align: center;
+}
+div.underline{
+    height: 3px;
+    width: 55px;
+    background-color: darkturquoise;
+    margin-left: 49%;
+    margin-top: -15px;
+}
+main{
+    background-color: white;
+    width: 44%;
+    position: relative;
+    left: 28%;
+    top: 36px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 2px grey, -1px -3px 4px grey;
+}
+main img{
+    width: 15%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    -webkit-filter: blur;
+    filter: drop-shadow(2px 4px 6px black);
+
+}
+main h3.name{
+    text-align: center;
+}
+main h2.job{
+    text-align: center;
+    color: darkturquoise;
+}
+main h4.content{
+    color: rgb(9, 34, 34);
+    padding-left: 8px;
+    padding-right: 2px;
+}
+div.btn button{
+    position: relative;
+    left: 42%;
+    background-color: transparent;
+    border: none;
+    font-size: 29px;
+    color: darkturquoise;
+}
+button.change{
+    color: darkturquoise;
+    border-color: darkturquoise;
+    border-radius: 6px;
+    position: relative;
+    left: 41%;
+    font-size: 18px;
 }
