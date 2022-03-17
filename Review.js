@@ -24,7 +24,7 @@ const review = [
         id:3,
         author:`Dev Oladayo`,
         job: `Full Stack Developer`,
-        img: `img-002`,
+        img: `img-002.JPG`,
         content: `A full stack web developer is a person who can develop both client and server software.
         In addition to mastering HTML and CSS, he/she also knows how to:
         Program a browser (like using JavaScript, jQuery, Angular, or Vue)
@@ -35,7 +35,7 @@ const review = [
         id:4,
         author: `Dev GodSent`,
         job: `Dev Crypto Ethusiast`,
-        img: `img-003`,
+        img: `img-003.jpg`,
         content: `A person who is a proponent of cryptocurrencies and decentralized finance (DeFi).
          Crypto enthusiasts strongly believe in the decentralized blockchain architecture
          and feel that it solves many problems both financially and politically. See DeFi and crypto glossary.`
@@ -50,8 +50,15 @@ const btnPrev = document.querySelector('.prev');
 const btnNext = document.querySelector('.next');
 const randomBtn = document.querySelector('.change')
 
-let rev = 1;
-randomBtn.addEventListener('click',function () {
-   
+
+randomBtn.addEventListener('click',() => {
+ let rev = Math.trunc( Math.random() * 4)  ;
+console.log(rev)
+ img.src = review[rev].img;
+ author.innerHTML = review[rev].author;
+ job.innerHTML = review[rev].job;
+ content.innerHTML = review[rev].content
 })
+
+btnPrev.addEventListener('click',)
 
